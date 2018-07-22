@@ -42,8 +42,10 @@ class AutoselectPlugin(octoprint.plugin.EventHandlerPlugin):
 			path = filename
 			sd = True
 		else:
-			path = self._file_manager.path_on_disk(storage, filename)
-			sd = False
+			path = ("lcl/" + filename)
+			self._logger.debug("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+			self._logger.debug(path)
+			sd = True
 
 		self._logger.info("Selecting {} on {} that was just uploaded".format(filename, storage))
 		self._printer.select_file(path, sd, False)
