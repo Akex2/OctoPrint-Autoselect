@@ -14,5 +14,5 @@ or manually using this URL:
 
     https://github.com/Akex2/OctoPrint-Autoselect/archive/master.zip
     
-##Thanks
+## Thanks
 @Foosel ;)
